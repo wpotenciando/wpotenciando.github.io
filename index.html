@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Versatile virtual assistant portfolio featuring customer support, administration, research, content support, and creative tools.">
+  <title>Winglenn Potenciando | Virtual Assistant & Digital Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #f5f3ff;
+      --muted: #b9b8d0;
+      --paper: #0b0b18;
+      --soft: #111126;
+      --line: rgba(190, 180, 255, .18);
+      --accent: #a78bfa;
+      --accent-dark: #8b5cf6;
+      --max: 1080px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: radial-gradient(ellipse at 50% -15%, #292052 0%, #111126 42%, #090914 82%);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+    /* ===== HERO ===== */
+    .menu-toggle {position:fixed;top:24px;right:max(24px,calc((100vw - 1320px)/2 + 24px));z-index:50;width:54px;height:54px;border-radius:50%;border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.92);backdrop-filter:blur(10px);display:grid;place-items:center;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+    .menu-toggle span,.menu-toggle span::before,.menu-toggle span::after {display:block;width:22px;height:2px;background:#222;border-radius:2px;content:"";position:relative}
+    .menu-toggle span::before {position:absolute;top:-7px}.menu-toggle span::after {position:absolute;top:7px}
+    .menu-panel {position:fixed;top:90px;right:max(24px,calc((100vw - 1320px)/2 + 24px));z-index:49;min-width:200px;padding:10px;border-radius:18px;background:#14141c;border:1px solid var(--line);box-shadow:0 18px 50px rgba(0,0,0,.35);display:none;flex-direction:column}
+    .menu-panel.open {display:flex}
+    .menu-panel a {color:#eee;padding:11px 16px;border-radius:10px;font-weight:500}
+    .menu-panel a:hover {background:rgba(255,255,255,.08);text-decoration:none}
+    .hero {padding:0;position:relative;min-height:max(100vh,860px);overflow:hidden;color:#151515;font-family:Figtree,Inter,ui-sans-serif,system-ui,sans-serif;
+      background:linear-gradient(180deg,#fff 0%,#f4fde6 12%,#c9f77c 36%,#b4f04f 52%,#d9f9a5 72%,#fff 92%)}
+    .hero a {color:inherit}
+    .hero-top {width:min(1320px,calc(100% - 48px));margin:0 auto;padding-top:34px;position:relative;z-index:5}
+    .logo {font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-style:italic;font-size:2.1rem;line-height:1;color:#151515;letter-spacing:-.01em}
+    .logo:hover {text-decoration:none}
+    .avail {display:flex;justify-content:center;align-items:center;gap:18px;margin-top:-6px;font-size:.98rem;color:#2a2a2a}
+    .avail .sep {width:1px;height:20px;background:rgba(0,0,0,.35)}
+    .laurel-label {display:flex;align-items:center;gap:6px;line-height:1.15;text-align:center;font-size:.9rem}
+    .laurel-label svg {width:22px;height:38px;fill:none;stroke:#222;stroke-width:1.6;stroke-linecap:round}
+    .hero h1 {position:relative;z-index:3;text-align:center;margin:26px 0 0;line-height:.9;letter-spacing:-.06em;pointer-events:none}
+    .hero h1 .hero-name {display:block;font-family:Figtree,Inter,ui-sans-serif,system-ui,sans-serif;font-weight:500;font-size:clamp(3.2rem,9vw,8rem);letter-spacing:-.065em}
+    .hero h1 .hero-role {display:block;font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;font-size:clamp(3.4rem,10vw,9.2rem);letter-spacing:-.05em;margin-top:-.02em;white-space:nowrap}
+    .stage {position:absolute;left:0;right:0;bottom:0;top:0;z-index:1;pointer-events:none}
+    .profile-wrap {position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:min(760px,70vw);height:min(66vh,640px);z-index:1}
+    .profile {display:block;width:auto;max-width:100%;height:100%;margin:0 auto;object-fit:contain;object-position:center bottom;filter:grayscale(1);
+      -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 62%,transparent 98%),linear-gradient(to right,transparent 0%,#000 20%,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 62%,transparent 98%),linear-gradient(to right,transparent 0%,#000 20%,#000 80%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect;
+      animation:headToBody 1.4s cubic-bezier(.22,.7,.2,1) .15s both}
+    /* single, subtle reveal from head down to body (no looping motion) */
+    @keyframes headToBody {from{clip-path:inset(0 0 100% 0);opacity:.2}to{clip-path:inset(0 0 0 0);opacity:1}}
+    .hero-pill {position:absolute;left:max(24px,calc((100vw - 1320px)/2 + 24px));top:58%;z-index:4;display:inline-flex;align-items:center;gap:14px;padding:16px 26px 16px 18px;border-radius:999px;background:#fff;font-size:1.25rem;font-weight:500;box-shadow:0 8px 30px rgba(80,120,0,.12);pointer-events:auto}
+    .hero-pill i {width:22px;height:22px;border-radius:50%;background:#a8ee3c;display:block}
+    .hero-pill:hover {text-decoration:none}
+    .hero-desc {position:absolute;right:max(24px,calc((100vw - 1320px)/2 + 24px));top:56%;z-index:4;max-width:320px;font-size:1.15rem;line-height:1.6;color:#1b1b1b;margin:0;pointer-events:auto}
+    .hero-note {position:absolute;left:max(24px,calc((100vw - 1320px)/2 + 24px));bottom:150px;z-index:4;max-width:230px;font-size:.92rem;line-height:1.4;color:#333;pointer-events:auto}
+    .hero-cta {position:absolute;right:max(24px,calc((100vw - 1320px)/2 + 120px));bottom:110px;z-index:4;display:inline-flex;align-items:center;gap:12px;padding:20px 30px;border-radius:999px;background:#1b1b1b;color:#fff!important;font-weight:500;font-size:1.05rem;pointer-events:auto}
+    .hero-cta:hover {text-decoration:none;background:#000}
+    .skills-strip {position:absolute;left:0;right:0;bottom:26px;z-index:4;width:min(1320px,calc(100% - 48px));margin:0 auto;display:flex;justify-content:space-between;gap:16px;color:#6c6c6c;font-size:1.1rem;opacity:.75}
+    .skills-strip span {display:inline-flex;align-items:center;gap:12px;white-space:nowrap}
+    .skills-strip svg {width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .hero .eyebrow {display:none}
+    @media (max-width:900px) {
+      .hero {min-height:0;padding-bottom:0}
+      .stage {position:relative;display:flex;flex-direction:column;align-items:center;padding:0 24px 0;pointer-events:auto}
+      .profile-wrap {position:relative;left:auto;transform:none;width:min(420px,88vw);height:clamp(300px,82vw,440px);order:2;margin-top:18px}
+      .hero-pill,.hero-desc,.hero-note,.hero-cta {position:static;transform:none;left:auto;right:auto;top:auto;bottom:auto}
+      .hero-desc {order:1;position:relative;z-index:4;right:auto;top:auto;text-align:center;max-width:420px;margin-top:20px;font-size:1.05rem}
+      .hero-pill {order:3;margin-top:-30px;position:relative;z-index:4;left:auto;top:auto;font-size:1.1rem}
+      .hero-cta {order:4;margin-top:14px;padding:16px 26px}
+      .hero-note {display:none}
+      .skills-strip {position:relative;bottom:auto;order:5;margin:28px auto 22px;flex-wrap:wrap;justify-content:center;gap:12px 22px;font-size:.95rem}
+      .avail {flex-wrap:wrap;margin-top:18px}
+      .hero h1 .hero-role {white-space:normal}
+      .menu-toggle {top:14px;right:16px;width:48px;height:48px}.menu-panel {top:70px;right:16px}
+    }
+    @media (max-width:520px) {.logo{font-size:1.6rem}.hero-top{padding-top:26px}.avail .sep{display:none}}
+    h2 { font-size: clamp(1.65rem, 3vw, 2.25rem); line-height: 1.2; letter-spacing: -.025em; margin: 0 0 12px; }
+    h3 { margin: 0 0 8px; font-size: 1.08rem; }
+    .lead { color: var(--muted); font-size: 1.12rem; max-width: 650px; }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 18px; border: 1px solid var(--accent); border-radius: 999px; font-weight: 700; transition:transform .2s,box-shadow .2s; }
+    .btn.primary {background:linear-gradient(135deg,#a78bfa,#7c3aed);color:white;border-color:transparent}
+    .btn.primary:hover { background: var(--accent-dark); text-decoration: none; }
+    .btn.secondary { color: var(--accent); background: rgba(255,255,255,.04); }
+    section { padding: 72px 0; }
+    .section-head { max-width: 680px; margin-bottom: 28px; }
+    .section-head p, .muted { color: var(--muted); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 24px; }
+    .stat, .card, .sample { border: 1px solid var(--line); border-radius: 12px; padding: 20px; background: rgba(255,255,255,.04); }
+    .stat strong { display: block; font-size: 1.35rem; letter-spacing: -.03em; }
+    .stat span { color: var(--muted); font-size: .84rem; }
+    .soft-section { background:rgba(17,17,38,.72);border-top:1px solid rgba(190,180,255,.08);border-bottom:1px solid rgba(190,180,255,.08); }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card p, .sample p { color: var(--muted); margin-bottom: 0; }
+    .icon { display: inline-flex; width: 40px; height: 40px; align-items: center; justify-content: center; border-radius: 10px; background: rgba(167,139,250,.14); color: #c4b5fd; font-weight: 800; margin-bottom: 14px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .tag { border: 1px solid var(--line); border-radius: 999px; padding: 5px 10px; font-size: .82rem; color: #ddd6fe; background: rgba(255,255,255,.04); }
+    .samples { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .sample-num { color: var(--accent); font-weight: 800; font-size: .8rem; letter-spacing: .08em; }
+    .sample ul { padding-left: 20px; color: var(--muted); margin-bottom: 0; }
+    .note { border-left: 3px solid var(--accent); padding: 12px 16px; background: rgba(167,139,250,.08); color: #d4d1e8; border-radius: 0 8px 8px 0; }
+    .contact-box { border:1px solid var(--line);border-radius:20px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:linear-gradient(135deg,rgba(124,58,237,.12),rgba(34,211,238,.04)); }
+    footer { border-top: 1px solid var(--line); padding: 24px 0; color: var(--muted); font-size: .88rem; }
+    @keyframes orbit {to{transform:rotate(360deg)}}
+    @keyframes pulse {0%,100%{opacity:.35;transform:scale(.96)}50%{opacity:.8;transform:scale(1.05)}}
+    .reveal {opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.visible {opacity:1;transform:translateY(0)}
+    @media (prefers-reduced-motion: reduce) {*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+    @media (max-width: 760px) {
+      .about-grid { grid-template-columns: 1fr; gap: 28px; }
+      .cards { grid-template-columns: 1fr 1fr; }
+      .samples { grid-template-columns: 1fr; }
+      .contact-box { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 480px) {
+      .wrap { width: min(var(--max), calc(100% - 28px)); }
+      .cards { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: 1fr; }
+      section { padding: 54px 0; }
+    }
+  </style>
+</head>
+<body>
+  <button class="menu-toggle" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menuPanel"><span></span></button>
+  <nav class="menu-panel" id="menuPanel" aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Skills</a>
+    <a href="#samples">Work Samples</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-top">
+        <a class="logo" href="#home">Winglenn Potenciando</a>
+        <div class="avail">
+          <div class="laurel-label">
+            <svg viewBox="0 0 22 38" aria-hidden="true"><path d="M17 36C8 32 3 24 4 12"/><path d="M4 12c-2 1-3 3-3 5M5 18c-2 0-4 1-4 3M7 24c-2 0-3 1-4 3M11 29c-2 0-3 1-4 2M5 7c0 2 1 3 3 3"/></svg>
+            <span>Available for<br><strong>remote work</strong></span>
+            <svg viewBox="0 0 22 38" aria-hidden="true" style="transform:scaleX(-1)"><path d="M17 36C8 32 3 24 4 12"/><path d="M4 12c-2 1-3 3-3 5M5 18c-2 0-4 1-4 3M7 24c-2 0-3 1-4 3M11 29c-2 0-3 1-4 2M5 7c0 2 1 3 3 3"/></svg>
+          </div>
+          <span class="sep"></span>
+          <span>Virtual Assistant</span>
+        </div>
+        <h1><span class="hero-name">Hi I’m Winglenn</span><span class="hero-role">Virtual Assistant</span></h1>
+      </div>
+
+      <div class="stage">
+        <div class="profile-wrap">
+          <img class="profile" src="profile.png" alt="Portrait of Winglenn Potenciando">
+        </div>
+        <a class="hero-pill" href="#contact"><i></i>Let’s work together <span aria-hidden="true">→</span></a>
+        <p class="hero-desc">Detail-oriented virtual assistant helping businesses stay organized, efficient, and focused on what matters most.</p>
+        <p class="hero-note">Reliable remote support built on about two years of customer experience.</p>
+        <a class="hero-cta" href="#contact"><span aria-hidden="true">→</span> Get in Touch</a>
+        <div class="skills-strip">
+          <span><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M9 11h7M9 15h7"/></svg>Admin Support</span>
+          <span><svg viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0116 0v3"/><rect x="3" y="14" width="4" height="6" rx="2"/><rect x="17" y="14" width="4" height="6" rx="2"/></svg>Customer Support</span>
+          <span><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg>Research</span>
+          <span><svg viewBox="0 0 24 24"><path d="M4 20l1-5L16 4l4 4L9 19z"/></svg>Content Support</span>
+          <span><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18c1.5 0 2-1 1.5-2s0-2 1.5-2h2a3 3 0 003-3A9 9 0 0012 3z"/></svg>Creative Tools</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about-grid">
+        <div>
+          <div class="eyebrow">A little about me</div>
+          <h2>Flexible support, grounded in communication and care.</h2>
+          <p class="muted">My background includes around two years in customer support, where I helped answer inquiries, follow up on delivery concerns, assist with refunds, and keep information organized. These experiences strengthened my written communication, problem-solving, patience, and attention to detail.</p>
+          <p class="muted">I’m interested in growing beyond one industry. Whether the work involves customer experience, admin support, research, content coordination, or learning a new platform, I bring a dependable attitude and a willingness to adapt to each team’s workflow.</p>
+        </div>
+        <div>
+          <h3>At a glance</h3>
+          <div class="stats">
+            <div class="stat"><strong>~2 Years</strong><span>Customer support</span></div>
+            <div class="stat"><strong>Shopee</strong><span>Quick to learn tools</span></div>
+            <div class="stat"><strong>Non-voice</strong><span>Chat and written support focus</span></div>
+          </div>
+          <div class="note" style="margin-top:18px;">My experience is primarily with Shopee. I am ready to learn the workflows and tools used by Amazon, Shopify, and other e-commerce platforms.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Skills & support</div>
+          <h2>Ways I can contribute</h2>
+          <p>A flexible foundation of people skills, organization, digital tools, and creative support—ready to grow with your needs.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">01</div><h3>Customer & Chat Support</h3><p>Responding to customer inquiries, sharing clear updates, and helping resolve order and delivery concerns.</p></article>
+          <article class="card"><div class="icon">02</div><h3>Research & Information Support</h3><p>Gathering details, organizing information, and presenting clear, accurate summaries to support decisions.</p></article>
+          <article class="card"><div class="icon">03</div><h3>Admin & Data Organization</h3><p>Keeping records, files, trackers, and routine tasks organized with care and consistency.</p></article>
+          <article class="card"><div class="icon">04</div><h3>Written Communication</h3><p>Creating clear, helpful replies and updates tailored to the audience, situation, and team guidelines.</p></article>
+          <article class="card"><div class="icon">05</div><h3>Content & Creative Support</h3><p>Helping with simple visual assets, presentations, short-form video edits, and content coordination.</p></article>
+          <article class="card"><div class="icon">06</div><h3>Digital Tool Adaptability</h3><p>Learning new platforms and workflows, following instructions, and adjusting to different business needs.</p></article>
+        </div>
+        <div class="tags">
+          <span class="tag">Shopee</span><span class="tag">Canva</span><span class="tag">CapCut</span><span class="tag">Written Communication</span><span class="tag">Attention to Detail</span><span class="tag">Fast Learner</span><span class="tag">Adaptability</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="samples">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Portfolio projects</div>
+          <h2>Work samples</h2>
+          <p>These practice projects show how I approach communication, organization, and creative tasks. They are practice examples and do not contain confidential customer or employer information.</p>
+        </div>
+        <div class="samples">
+          <article class="sample">
+            <div class="sample-num">SAMPLE 01</div>
+            <h3>Product Listing Example</h3>
+            <p><strong>Product:</strong> Stainless Steel Water Bottle, 750 ml</p>
+            <p><strong>Sample title:</strong> Stainless Steel Water Bottle 750ml – Reusable, Leak-Resistant Design</p>
+            <p><strong>Short description:</strong> A reusable 750 ml water bottle designed for everyday hydration at work, school, or while traveling. Review product specifications before publishing.</p>
+            <p><strong>Example keywords:</strong> stainless steel water bottle, reusable bottle, 750 ml bottle</p>
+          </article>
+          <article class="sample">
+            <div class="sample-num">SAMPLE 02</div>
+            <h3>Customer Service Reply</h3>
+            <p><strong>Scenario:</strong> A customer asks for an update on a delayed order.</p>
+            <p>“Hi! Thanks for reaching out. I’m sorry your order hasn’t arrived yet. I’ll check the latest tracking update and share the available details with you. Thank you for your patience while we look into this.”</p>
+            <p class="muted">Approach: acknowledge the concern, check the facts, and give a clear next step.</p>
+          </article>
+          <article class="sample">
+            <div class="sample-num">SAMPLE 03</div>
+            <h3>Admin & Data Organization Workflow</h3>
+            <ul>
+              <li>Confirm the order number and current status.</li>
+              <li>Review the latest tracking information.</li>
+              <li>Share a clear update without promising an unconfirmed delivery date.</li>
+              <li>Follow up according to the store's process.</li>
+            </ul>
+          </article>
+          <article class="sample">
+            <div class="sample-num">SAMPLE 04</div>
+            <h3>Creative Content</h3>
+            <p>Create a sample promotional graphic in Canva or a short product video in CapCut.</p>
+            <p class="muted">Add your own exported image or video link here after you make the sample.</p>
+            <p><strong>Sample link:</strong> <span style="color:#68707d;">Add your Canva project or video link</span></p>
+          </article>
+        </div>
+        <p class="note" style="margin-top:20px;">Before applying, replace or expand these practice examples with your own samples. Do not claim a sample project was client work unless it really was.</p>
+      </div>
+    </section>
+
+    <section class="soft-section" id="contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <div>
+            <div class="eyebrow">Let's connect</div>
+            <h2>Have a project or role in mind?</h2>
+            <p class="muted" style="margin-bottom:0;">I’m open to remote opportunities across different industries and excited to learn where I can add value.</p>
+          </div>
+          <div class="buttons" style="margin-top:0;">
+            <a class="btn primary" href="mailto:winglennpotenciando@gmail.com">Email Me</a>
+            <a class="btn secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <p class="muted" style="font-size:.88rem;margin-top:14px;">Email: winglennpotenciando@gmail.com · Replace the LinkedIn link with your profile URL when ready.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> Winglenn Potenciando · Virtual Assistant & Digital Support Portfolio</div>
+  </footer>
+  <script>
+    const mBtn=document.getElementById('menuBtn'),mPanel=document.getElementById('menuPanel');
+    mBtn.addEventListener('click',()=>{const o=mPanel.classList.toggle('open');mBtn.setAttribute('aria-expanded',o)});
+    mPanel.addEventListener('click',e=>{if(e.target.tagName==='A'){mPanel.classList.remove('open');mBtn.setAttribute('aria-expanded',false)}});
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const revealItems = document.querySelectorAll('main section:not(.hero), .card, .sample, .stat, .contact-box');
+    revealItems.forEach((item, i) => { item.classList.add('reveal'); if(item.matches('.card,.sample,.stat')) item.style.transitionDelay = `${(i % 3) * 90}ms`; });
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+      }), {threshold:.12});
+      revealItems.forEach(item => observer.observe(item));
+    } else revealItems.forEach(item => item.classList.add('visible'));
+  </script>
+</body>
+</html>
