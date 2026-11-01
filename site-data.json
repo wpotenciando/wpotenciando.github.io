@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T13:14:13.714Z",
+ "updated": "2026-11-01T13:14:17.592Z",
  "hero": {
   "src": "uploads/mvxt8yuo-imy0tq.webp"
  },
@@ -102,9 +102,10 @@
    "background-image": "none",
    "background-color": "rgba(255,255,255,0.05)",
    "width": "384px",
-   "height": "8px",
+   "height": "168px",
    "min-height": "0px",
-   "--dy": "-82px"
+   "--dy": "-152px",
+   "--dx": "0px"
   }
  },
  "custom": []
