@@ -1,0 +1,104 @@
+{
+ "updated": "2026-11-01T12:33:09.044Z",
+ "hero": {
+  "src": "uploads/mvxt8yuo-imy0tq.webp"
+ },
+ "works": [
+  {
+   "title": "Product Listing Example",
+   "desc": "Add screenshots or links of your product listings here.",
+   "items": []
+  },
+  {
+   "title": "Customer Service Reply",
+   "desc": "Real chat support samples (customer details hidden). Click an image to enlarge it.",
+   "items": [
+    {
+     "type": "image",
+     "src": "uploads/mvxt8yuo-3h0bu9.png",
+     "title": "Order concern: careful packing & checking",
+     "note": "Acknowledged the buyer's concern and gave a clear, reassuring update."
+    },
+    {
+     "type": "image",
+     "src": "uploads/mvxt8yuo-0xuh2f.png",
+     "title": "Courier request: explaining Shopee allocation",
+     "note": "Politely explained the courier process and kept a helpful tone."
+    }
+   ]
+  },
+  {
+   "title": "Admin & Data Organization Workflow",
+   "desc": "Sample trackers and spreadsheets. Click an image to enlarge it.",
+   "items": [
+    {
+     "type": "image",
+     "src": "uploads/mvxt8yuo-czzagh.png",
+     "title": "Weekly sales & expense tracker",
+     "note": "Tracked cups sold per flavor and size, daily expenses, income, and profit in one summary."
+    },
+    {
+     "type": "image",
+     "src": "uploads/mvxt8yuo-dfj5um.png",
+     "title": "Product expiry date tracker",
+     "note": "Organized product names with multiple expiry dates, sorted by month in separate sheet tabs."
+    }
+   ]
+  },
+  {
+   "title": "Creative Content",
+   "desc": "Add your Canva designs or CapCut videos here.",
+   "items": []
+  },
+  {
+   "title": "Digital Tool Adaptability",
+   "desc": "Tools I have learned and used.",
+   "tools": [
+    "Microsoft Excel",
+    "Canva",
+    "CapCut",
+    "Shopify",
+    "Shopee",
+    "Facebook",
+    "TikTok",
+    "Instagram",
+    "Google Docs",
+    "Google Forms",
+    "Google Keep",
+    "Google Calendar"
+   ],
+   "note": "I am willing to learn more tools and expand my knowledge to improve my work in business.",
+   "items": []
+  }
+ ],
+ "texts": {},
+ "cards": [
+  {
+   "h": "Customer &amp; Chat Support",
+   "p": "Responding to customer inquiries, sharing clear updates, and helping resolve order and delivery concerns."
+  },
+  {
+   "h": "Research &amp; Information Support",
+   "p": "Gathering details, organizing information, and presenting clear, accurate summaries to support decisions."
+  },
+  {
+   "h": "Admin &amp; Data Organization",
+   "p": "Keeping records, files, trackers, and routine tasks organized with care and consistency."
+  },
+  {
+   "h": "Written Communication",
+   "p": "Creating clear, helpful replies and updates tailored to the audience, situation, and team guidelines."
+  },
+  {
+   "h": "Content &amp; Creative Support",
+   "p": "Helping with simple visual assets, presentations, short-form video edits, and content coordination."
+  },
+  {
+   "h": "Digital Tool Adaptability",
+   "p": "Learning new platforms and workflows, following instructions, and adjusting to different business needs."
+  }
+ ],
+ "tags": [],
+ "layout": {},
+ "custom": []
+}
