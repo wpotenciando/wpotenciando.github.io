@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T14:04:08.500Z",
+ "updated": "2026-11-01T14:04:12.225Z",
  "hero": {
   "src": "uploads/mvxt8yuo-imy0tq.webp"
  },
@@ -103,8 +103,8 @@
    "font-family": "\"Inter\", sans-serif"
   },
   "pill0": {
-   "--dx": "-64px",
-   "--dy": "80px"
+   "--dx": "0px",
+   "--dy": "0px"
   }
  },
  "custom": []
