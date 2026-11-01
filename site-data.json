@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T13:16:00.340Z",
+ "updated": "2026-11-01T13:16:25.967Z",
  "hero": {
   "src": "uploads/mvxt8yuo-imy0tq.webp"
  },
@@ -99,7 +99,7 @@
    "background-color": "rgba(0,0,0,0)"
   },
   "card3": {
-   "width": "649px"
+   "width": "349px"
   }
  },
  "custom": []
