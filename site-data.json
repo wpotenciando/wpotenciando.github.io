@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T12:33:17.966Z",
+ "updated": "2026-11-01T12:44:07.894Z",
  "hero": {
   "src": "uploads/mvxt8yuo-imy0tq.webp"
  },
@@ -93,6 +93,11 @@
   }
  ],
  "tags": [],
- "layout": {},
+ "layout": {
+  "hero0": {
+   "background-image": "none",
+   "background-color": "rgba(0,0,0,0)"
+  }
+ },
  "custom": []
 }
