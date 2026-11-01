@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T13:51:20.923Z",
+ "updated": "2026-11-01T14:03:53.185Z",
  "hero": {
   "src": "uploads/mvxt8yuo-imy0tq.webp"
  },
@@ -101,6 +101,10 @@
   "card3": {
    "width": "349px",
    "font-family": "\"Inter\", sans-serif"
+  },
+  "pill0": {
+   "--dx": "0px",
+   "--dy": "0px"
   }
  },
  "custom": []
