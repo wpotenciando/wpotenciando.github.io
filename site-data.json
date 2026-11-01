@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T13:16:25.967Z",
+ "updated": "2026-11-01T13:16:45.137Z",
  "hero": {
   "src": "uploads/mvxt8yuo-imy0tq.webp"
  },
@@ -99,7 +99,8 @@
    "background-color": "rgba(0,0,0,0)"
   },
   "card3": {
-   "width": "349px"
+   "width": "349px",
+   "font-family": "\"Poppins\", sans-serif"
   }
  },
  "custom": []
