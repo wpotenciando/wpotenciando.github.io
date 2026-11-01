@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T13:14:21.180Z",
+ "updated": "2026-11-01T13:16:00.340Z",
  "hero": {
   "src": "uploads/mvxt8yuo-imy0tq.webp"
  },
@@ -98,14 +98,8 @@
    "background-image": "none",
    "background-color": "rgba(0,0,0,0)"
   },
-  "stat0": {
-   "background-image": "none",
-   "background-color": "rgba(255,255,255,0.05)",
-   "width": "384px",
-   "height": "168px",
-   "min-height": "0px",
-   "--dy": "-80px",
-   "--dx": "8px"
+  "card3": {
+   "width": "649px"
   }
  },
  "custom": []
