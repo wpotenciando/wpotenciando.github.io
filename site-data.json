@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T12:33:09.044Z",
+ "updated": "2026-11-01T12:33:17.966Z",
  "hero": {
   "src": "uploads/mvxt8yuo-imy0tq.webp"
  },
@@ -31,12 +31,6 @@
    "title": "Admin & Data Organization Workflow",
    "desc": "Sample trackers and spreadsheets. Click an image to enlarge it.",
    "items": [
-    {
-     "type": "image",
-     "src": "uploads/mvxt8yuo-czzagh.png",
-     "title": "Weekly sales & expense tracker",
-     "note": "Tracked cups sold per flavor and size, daily expenses, income, and profit in one summary."
-    },
     {
      "type": "image",
      "src": "uploads/mvxt8yuo-dfj5um.png",
