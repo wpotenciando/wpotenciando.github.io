@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T13:14:17.592Z",
+ "updated": "2026-11-01T13:14:21.180Z",
  "hero": {
   "src": "uploads/mvxt8yuo-imy0tq.webp"
  },
@@ -104,8 +104,8 @@
    "width": "384px",
    "height": "168px",
    "min-height": "0px",
-   "--dy": "-152px",
-   "--dx": "0px"
+   "--dy": "-80px",
+   "--dx": "8px"
   }
  },
  "custom": []
