@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T13:09:18.550Z",
+ "updated": "2026-11-01T13:09:52.023Z",
  "hero": {
   "src": "uploads/mvxt8yuo-imy0tq.webp"
  },
@@ -95,9 +95,8 @@
  "tags": [],
  "layout": {
   "hero0": {
-   "background-image": "linear-gradient(135deg,rgba(0,0,0,0),#8f70ff)",
-   "--grad": "1",
-   "--g2": "#8f70ff"
+   "background-image": "none",
+   "background-color": "rgba(0,0,0,0)"
   }
  },
  "custom": []
