@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T07:00:35.473Z",
+ "updated": "2026-11-02T15:06:46.032Z",
  "hero": {
   "src": "uploads/mvxt8yuo-imy0tq.webp"
  },
@@ -90,6 +90,10 @@
   {
    "h": "Digital Tool Adaptability",
    "p": "Learning new platforms and workflows, following instructions, and adjusting to different business needs."
+  },
+  {
+   "h": "New skill",
+   "p": "Describe this skill."
   }
  ],
  "tags": [],
